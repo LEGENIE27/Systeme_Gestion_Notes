@@ -5,8 +5,7 @@
 #include <sstream>
 #include <algorithm>  
 
-//NONGUIERMA WENDKUNI FABRICE EZECKIEL && AWOURASSIBE FIDELE TINDANAHIRE
-
+//NONGUIERMA Fabrice Ezeckiel && TINDANAHIRE Awourassibè Fidèle
 // Structure note d'étudiant
 struct Note {
     std::string matiere;
@@ -89,7 +88,7 @@ void chargerDonnees(std::vector<Etudiant>& etudiants, const std::string& filenam
 }
 
 void afficherMenu() {
-    std::cout << "\nSysteme de gestion de notes :\n";
+    std::cout << "\n====== Menu ======\n";
     std::cout << "1. Ajouter un etudiant\n";
     std::cout << "2. Ajouter une note pour un etudiant\n";
     std::cout << "3. Modifier une note\n";
@@ -100,6 +99,7 @@ void afficherMenu() {
     std::cout << "8. Sauvegarder les donnees\n";
     std::cout << "9. Charger les donnees\n";
     std::cout << "0. Quitter\n";
+    std::cout << "==================\n";
 }
 
 int main() {
@@ -160,7 +160,7 @@ int main() {
                     }
                 }
                 if (!noteModifiee) {
-                    std::cout << "Note non trouvée pour cette matiere.\n";
+                    std::cout << "Note non trouvee pour cette matiere.\n";
                 }
             } else {
                 std::cout << "Etudiant non trouve.\n";
@@ -202,6 +202,7 @@ int main() {
         else if (choix == 6) {
             // Afficher le bulletin de l'étudiant
             std::string identifiant;
+            std::cout << "\n=== Bulletin de l'etudiant ===\n";
             std::cout << "Identifiant de l'etudiant : ";
             std::getline(std::cin, identifiant);
             Etudiant* etudiant = rechercherEtudiant(etudiants, identifiant);
@@ -210,11 +211,12 @@ int main() {
             } else {
                 std::cout << "Etudiant non trouve.\n";
             }
+            std::cout << "\n===============================\n";
         }
         else if (choix == 7) {
             // Rechercher un étudiant
             std::string identifiant;
-            std::cout << "Identifiant de l'étudiant : ";
+            std::cout << "Identifiant de l'etudiant : ";
             std::getline(std::cin, identifiant);
             Etudiant* etudiant = rechercherEtudiant(etudiants, identifiant);
             if (etudiant) {

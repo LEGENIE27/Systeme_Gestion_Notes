@@ -1,0 +1,12 @@
+Sujet 4 
+
+NONGUIERMA Wendkuni Fabrice Ezeckiel && TINDANHIRE Awourassibè Fidèle
+
+ Système de Gestion des Notes pour une École
+ Ajouter un étudiant avec nom, identifiant et liste de matières.
+ Ajouter des notes pour chaque matière pour un étudiant.
+ Modifier ou supprimer une note spécifique d'un étudiant.
+ Calculer la moyenne générale pour chaque étudiant.
+ Générer un bulletin de notes pour chaque étudiant.
+ Rechercher un étudiant par nom ou identifiant.
+ Sauvegarder et charger les données des étudiants et des notes depuis un fichier
